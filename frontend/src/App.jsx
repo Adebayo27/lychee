@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "./App.css";
-import { Alert, Card, CardContent, CircularProgress, Divider, Snackbar } from "@mui/material";
+import { Alert, Card, CardContent, CircularProgress, Divider, Snackbar, Tooltip } from "@mui/material";
 import CustomInput from "./components/input";
 import { Tab, Tabs, TabsList, TabPanel } from "./components/customTabs";
 import CustomDropDown from "./components/customSelect";
@@ -142,7 +142,7 @@ function App() {
                   Brand kit name
                 </Typography>
                 <Box width={"37px"}></Box>
-                <CustomInput type={'text'} autocomplete={'off'} error onChange={(e)=>setKitName(e.target.value)} placeholder={'My brand kit'} />
+                <CustomInput type={'text'} autoComplete={'off'} error onChange={(e)=>setKitName(e.target.value)} placeholder={'My brand kit'} />
               </Box>
 
               <Box
@@ -182,6 +182,7 @@ function App() {
                         >
                           Outro
                         </Typography>
+                        <Tooltip title="We will show the call to action at the end of the clip">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -203,6 +204,8 @@ function App() {
                             strokeLinejoin="round"
                           />
                         </svg>
+                        </Tooltip>
+                        
                       </Box>
                       <Box display={"flex"} mt={"42px"} justifyContent={'space-between'}>
                         <Typography
@@ -265,7 +268,7 @@ function App() {
               </Box>
               <Divider />
               <Box display={'flex'} alignItems={'left'} mt={'24px'}>
-                <CustomButton variant="contained" onClick={handleSubmit} disabled={loading} loading={loading}>
+                <CustomButton variant="contained" onClick={handleSubmit} disabled={loading}>
                  {loading ? <Box>Loading &nbsp; <CircularProgress size={10} sx={{ color: 'white'}} /></Box> : 'Save'}
                 </CustomButton>
               </Box>

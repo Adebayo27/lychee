@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { makeStyles } from "@material-ui/core/styles";
-import { FormControl, MenuItem, Select, } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import { FormControl, MenuItem, Select } from "@mui/material";
 const useStyles = makeStyles(() => ({
   formControl: {
     "& .MuiInputBase-root": {
@@ -79,7 +79,6 @@ const CustomDropDown = ({ value, handleChange, items, defaultValue }) => {
       <Select
         value={value}
         onChange={handleChange}
-        disableUnderline
         defaultValue={defaultValue}
         MenuProps={menuProps}
         classes={{
