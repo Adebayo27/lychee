@@ -84,56 +84,8 @@ app.post("/create-brand-kit", async (req, res) => {
 });
 
 app.get('/', async(req, res) => {
-    // ffmpeg()
-    //     .input(inputPath)
-    //     .videoFilters([
-    //         {
-    //             filter: 'drawtext',
-    //             options: {
-    //             fontfile:'assets/OpenSans-Regular.ttf',
-    //             text: 'THIS IS TEXT',
-    //             fontsize: 32,
-    //             fontcolor: '#FF00F2',
-    //             x: '(main_w/2-text_w/2)',
-    //             y: 250,
-    //             shadowcolor: 'black',
-    //             shadowx: 2,
-    //             shadowy: 2,
-    //             enable: 'between(t,0,4)',
-    //             }
-    //         },
-    //     ])
-    //     .videoCodec(videoCodec)
-    //     .size('720x?').aspect('9:16')
-    //     .addOption('-x264opts', x264Options)
-    //     .outputOptions('-b:v', videoBitrates[0])
-    //     .format('dash')
-    //     .output(outputPath)
-    //     .on('end', () => {
-    //         console.log('DASH encoding complete.');
-    //     })
-    //     .on('error', (err) => {
-    //         console.error('Error:', err.message);
-    //     })
-    //     .run();
     res.status(200).json({
         message: 'ping',
-        data: "It's working now guy".replaceAll("'", "\'"),
-        hey: {
-            filter: 'drawtext',
-            options: {
-                fontfile:'assets/OpenSans-Regular.ttf',
-                text: "It's working now guy".replaceAll("'", "\'"),
-                fontsize: 32,
-                fontcolor: '#FF00F2',
-                x: '(main_w/2-text_w/2)',
-                y: 250,
-                shadowcolor: 'black',
-                shadowx: 2,
-                shadowy: 2,
-                enable: 'between(t,0,4)',
-            }
-        },
     });
 })
 
