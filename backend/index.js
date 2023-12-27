@@ -81,7 +81,7 @@ app.post("/create-brand-kit", async (req, res) => {
       message: err,
     });
   }
-});
+}); 
 
 app.get('/', async(req, res) => {
     res.status(200).json({
