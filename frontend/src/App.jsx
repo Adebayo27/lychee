@@ -9,7 +9,6 @@ import CustomDropDown from "./components/customSelect";
 import CustomTextArea from "./components/customTextArea";
 import CustomButton from "./components/customButton";
 function App() {
-
   const [kitName, setKitName] = React.useState('')
   const [callToAction, setCallToAction] = React.useState('Select')
   const [customCTA, setCustomCTA] = React.useState('')
