@@ -25,7 +25,7 @@ Features
 Clone the project
 
 ```bash
-  git clone https://github.com/Adebayo27/lychee.git
+  git clone https://github.com/savannahtech/adebayo-lychee.git
 ```
 
 Go to the project directory (Frontend)
