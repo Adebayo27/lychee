@@ -13,7 +13,7 @@ Go to the project directory (Frontend)
 Install dependencies
 
 ```bash
-  npm install
+  npm install --legacy-peer-deps
 ```
 
 Start the server
