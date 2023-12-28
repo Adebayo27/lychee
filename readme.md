@@ -31,7 +31,7 @@ Clone the project
 Go to the project directory (Frontend)
 
 ```bash
-  cd frontend
+  cd lychee/frontend
 ```
 
 Install dependencies
@@ -49,11 +49,8 @@ Start the server
 To run the backend
 
 ```bash
-  cd to the project root directory
-```
-
-```bash
-  cd backend
+  go to the project root directory
+  cd lychee/backend
 ```
 
 Install dependencies
