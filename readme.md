@@ -37,7 +37,7 @@ Go to the project directory (Frontend)
 Install dependencies
 
 ```bash
-  npm install
+  npm install --legacy-peer-deps
 ```
 
 Start the server
@@ -56,7 +56,7 @@ To run the backend
 Install dependencies
 
 ```bash
-  npm install --legacy-peer-deps
+  npm install
 ```
 
 Start the server
