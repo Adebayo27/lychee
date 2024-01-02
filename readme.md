@@ -14,7 +14,9 @@ Features
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://github.com/savannahtech/adebayo-lychee.git)
+
+Note: You must install ffmpeg on your device from [here](https://www.ffmpeg.org/download.html)
 
 1. Clone the repository
 2. cd into the project root folder
